@@ -15,11 +15,11 @@ We use three datasets to perform our experiments, i.e., MIRFLICKR-25K, IAPR TC-1
 
 You can download all dataset from pan.baidu.com. The links are listed as follows:
 
-- [MIRFLICKR.mat](https://pan.baidu.com/s/13opzqF_eq8YK3sVPt2Iy9Q) Password: 6666
+- [MIRFLICKR.mat](https://pan.baidu.com/s/1t7iBF2-z0vlfSvHWA5SD2g) Password: 9m8n
 
-- [IAPR TC-12.mat](https://pan.baidu.com/s/1bln8B642z6LDnjRZlqbiIA) Password: 6666
+- [IAPR TC-12.mat](https://pan.baidu.com/s/1miHukM8nmBkmqknCmCAn7A) Password: u9mb
 
-- [NUSWIDE10.mat](https://pan.baidu.com/s/1bJOJrdcKWCZBG2cDV5FdBQ) Password: 6666
+- [NUSWIDE10.mat](https://pan.baidu.com/s/17wJ7NfEggeAvgc7A1L75sw) Password: 4rci
 
 
 ### 3. Run demo

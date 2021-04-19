@@ -107,10 +107,10 @@ for dbi = 1     :length(db)
             switch(hashmethods{jj})
                 case 'LEMON'
                     fprintf('......%s start...... \n\n', 'LEMON');
-                    OURparam = param;
-                    OURparam.alpha = 10000; OURparam.beta = 10000; OURparam.theta = 1;
-                    OURparam.gamma = 0.1; OURparam.xi = 1;
-                    eva_info_ = evaluate_OUR(XChunk,YChunk,LChunk,XTest,YTest,LTest,OURparam);
+                    LEMONparam = param;
+                    LEMONparam.alpha = 10000; LEMONparam.beta = 10000; LEMONparam.theta = 1;
+                    LEMONparam.gamma = 0.1; LEMONparam.xi = 1;
+                    eva_info_ = evaluate_LEMON(XChunk,YChunk,LChunk,XTest,YTest,LTest,OURparam);
                 case 'DCH'
                     fprintf('......%s start...... \n\n', 'DCH');
                     DCHparam = param;

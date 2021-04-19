@@ -110,7 +110,7 @@ for dbi = 1     :length(db)
                     LEMONparam = param;
                     LEMONparam.alpha = 10000; LEMONparam.beta = 10000; LEMONparam.theta = 1;
                     LEMONparam.gamma = 0.1; LEMONparam.xi = 1;
-                    eva_info_ = evaluate_LEMON(XChunk,YChunk,LChunk,XTest,YTest,LTest,OURparam);
+                    eva_info_ = evaluate_LEMON(XChunk,YChunk,LChunk,XTest,YTest,LTest,LEMONparam);
                 case 'DCH'
                     fprintf('......%s start...... \n\n', 'DCH');
                     DCHparam = param;

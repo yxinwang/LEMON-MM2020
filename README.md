@@ -14,12 +14,7 @@ Matlab
 We use three datasets to perform our experiments, i.e., MIRFLICKR-25K, IAPR TC-12, and NUS-WIDE datasets.
 
 You can download all dataset from pan.baidu.com. The links are listed as follows:
-
-- [MIRFLICKR.mat](https://pan.baidu.com/s/1t7iBF2-z0vlfSvHWA5SD2g) Password: 9m8n
-
-- [IAPR TC-12.mat](https://pan.baidu.com/s/1miHukM8nmBkmqknCmCAn7A) Password: u9mb
-
-- [NUSWIDE10.mat](https://pan.baidu.com/s/17wJ7NfEggeAvgc7A1L75sw) Password: 4rci
+- https://pan.baidu.com/s/1MP1_t18bKE6Y8zYoJ3T8CA Password: MIMA
 
 
 ### 3. Run demo

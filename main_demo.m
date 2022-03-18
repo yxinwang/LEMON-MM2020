@@ -9,7 +9,6 @@ end
 
 db = {'IAPRTC-12','MIRFLICKR','NUSWIDE10'};
 hashmethods = {'LEMON'};
-%hashmethods = {'SCM-seq','DCH','LCMFH','SCRATCH','DLFH','OCMH','OLSH','LEMON'};
 loopnbits = [8 16 32 64 128];
 
 param.top_K = 2000;
@@ -111,35 +110,7 @@ for dbi = 1     :length(db)
                     LEMONparam.alpha = 10000; LEMONparam.beta = 10000; LEMONparam.theta = 1;
                     LEMONparam.gamma = 0.1; LEMONparam.xi = 1;
                     eva_info_ = evaluate_LEMON(XChunk,YChunk,LChunk,XTest,YTest,LTest,LEMONparam);
-                case 'DCH'
-                    fprintf('......%s start...... \n\n', 'DCH');
-                    DCHparam = param;
-                    eva_info_ = evaluate_DCH(XChunk,YChunk,LChunk,XTest,YTest,LTest,DCHparam);             
-                case 'SCM-seq'
-                    fprintf('......%s start...... \n\n', 'SCM-seq');
-                    SCM_seqparam = param;
-                    eva_info_ =evaluate_SCM_seq(XChunk,YChunk,LChunk,XTest,YTest,LTest,SCM_seqparam);
-                case 'SCRATCH'
-                    fprintf('......%s start...... \n\n', 'SCRATCH');
-                    SCRATCHparam = param;
-                    eva_info_ =evaluate_SCRATCH(XChunk,YChunk,LChunk,XTest,YTest,LTest,SCRATCHparam);
-                case 'LCMFH'
-                    fprintf('......%s start...... \n\n', 'LCMFH');
-                    LCMFHparam = param;
-                    eva_info_ =evaluate_LCMFH(XChunk,YChunk,LChunk,XTest,YTest,LTest,LCMFHparam);
-                case 'DLFH'
-                    fprintf('......%s start...... \n\n', 'DLFH');
-                    DLFHparam = param;
-                    eva_info_ =evaluate_DLFH(XChunk,YChunk,LChunk,XTest,YTest,LTest,DLFHparam);
-                case 'OCMH'
-                    fprintf('......%s start...... \n\n', 'OCMH');
-                    OCMHparam = param;
-                    eva_info_ =evaluate_OCMH(XChunk,YChunk,LChunk,XTest,YTest,LTest,OCMHparam);
-                case 'OLSH'
-                    fprintf('......%s start...... \n\n', 'OLSH');
-                    OLSHparam = param;
-                    eva_info_ =evaluate_OLSH(XChunk,YChunk,LChunk,XTest,YTest,LTest,OLSHparam);
-            end
+                end
             eva_info{jj,ii} = eva_info_;
             clear eva_info_
         end
